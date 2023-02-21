@@ -42,6 +42,71 @@
       6 times larger than the content in the rows with just a single letter.
       The row hits a point where it thinks the content inside it is getting too close, 
       in my case about 770px, and decides to go ahead and be safe and switches to horizontal
+
+      It is because of the column class, class col-md breaks before col-sm-2.
     </p>
+
+    <div class="container">
+      <img class="img-fluid" src="kniphofia.png"/>
+      <img class="img-fluid" src="oxalis.png"/>
+      <img class="img-fluid" src="yarrow.png"/>
+    </div>
+
+    <div class="container">
+      <img class="img-thumbnail" src="kniphofia.png"/>
+      <img class="img-thumbnail" src="oxalis.png"/>
+      <img class="img-thumbnail" src="yarrow.png"/>
+    </div>
+
+    <table class="table table-striped table-bordered table-dark">
+      <caption>How these things relate, I do not know</caption>
+      <thead>
+        <tr>
+          <th scope="col">Letter</th>
+          <th scope="col">Plant</th>
+          <th scope="col">Mountain</th>
+          <th scope="col">Lake</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">K</th>
+          <td>Kniphofia</td>
+          <td>Kilamanjaro</td>
+          <td>Kivu</td>
+        </tr>
+        <tr>
+          <th scope="row">Y</th>
+          <td>Yarrow</td>
+          <td>Yu Shan</td>
+          <td>Yamdrok</td>
+        </tr>
+        <tr>
+          <th scope="row">O</th>
+          <td>Oxalis</td>
+          <td>Organ Pipes</td>
+          <td>Onega</td>
+        </tr>
+        <tr>
+          <th scope="row">U</th>
+          <td>Ulex</td>
+          <td>Ultar</td>
+          <td>Ulu Lepar</td>
+        </tr>
+        <tr>
+          <th scope="row">N</th>
+          <td>Nerine</td>
+          <td>Naltar Peak</td>
+          <td>Nagase</td>
+        </tr>
+        <tr>
+          <th scope="row">G</th>
+          <td>Garrya</td>
+          <td>Galatea</td>
+          <td>Garda</td>
+        </tr>
+      </tbody>
+    </table>
+
   </body>
 </html>
