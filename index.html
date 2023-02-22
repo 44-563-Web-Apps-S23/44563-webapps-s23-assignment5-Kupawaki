@@ -13,6 +13,23 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
   </head>
   <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Interesting Plants</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navToggle" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navToggle">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="basic.html">Basic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="advanced.html">Advanced</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <h1>Plants by Kooper Young</h1>
 
     <div class="container-fluid">
@@ -37,12 +54,7 @@
     <br>
     <h3>Why is it behaving this way?</h3>
 
-    <p>Okay, so as you can see the row with the plant names break first. 
-      I can only assume this is because the content in those rows is about 
-      6 times larger than the content in the rows with just a single letter.
-      The row hits a point where it thinks the content inside it is getting too close, 
-      in my case about 770px, and decides to go ahead and be safe and switches to horizontal
-
+    <p>Okay, so as you can see the row with the plant names break first.
       It is because of the column class, class col-md breaks before col-sm-2.
     </p>
 
@@ -108,6 +120,8 @@
       </tbody>
     </table>
 
+    <hr>
+
     <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
       <div class="btn-group me-2" role="group" aria-label="group1">
         <button class="btn alert alert-success">K</button>
@@ -122,6 +136,37 @@
         <button class="btn alert alert-danger">G</button>
       </div>
     </div>
+
+    <hr>
+
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu">
+        <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
+        <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+      </div>
+    </div>
+
+    <hr>
+
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control">
+        <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="form-label">Plant</label>
+        <input type="text" class="form-control" placeholder="Enter your plant">
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">Sign up for newsletter?</label>
+        <input type="checkbox" class="form-check-input">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
   </body>
 </html>
